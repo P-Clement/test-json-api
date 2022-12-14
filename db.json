@@ -1,0 +1,178 @@
+{
+  "headers": {
+      "CANAL_VENTE": "site-marchand",
+      "NUMERO_SUIVI_DEMANDE": "606",
+      "TYPE_DEMANDE": "CMD01",
+      "JMSCorrelationID":"606",
+      "NUMERO_COMMANDE_SMG": "MP01653466960544646",
+      "REQUEST_JAVA_TYPE": "fr.aprr.asa.esb.commons.demande.request.object.CommandeSmgRequest",
+      "DATE_CREATION_DEMANDE": "1668015518",
+      "PROCESSED": "true",
+      "DONE_WITH_ERROR": "true",
+      "ERROR_EXCEPTION_MESSAGE": null,
+      "ERROR_EXCPETION_TRACE": "deployment.demandes.war//fr.aprr.asa.esb.infra.ermes.salesforce.ImpSalesForceConnector.isSalesForceCallSucceed(ImpSalesForceConnector.java:90)\ndeployment.demandes.war//fr.aprr.asa.esb.demande.api.base.SalesForceConnectorBase.handelRequesst(SalesForceConnectorBase.java:21)\njava.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\njava.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\njava.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.base/java.lang.reflect.Method.invoke(Method.java:566)\norg.jboss.weld.core@3.1.4.Final-redhat-00001//org.jboss.weld.bean.proxy.AbstractBeanInstance.invoke(AbstractBeanInstance.java:38)\norg.jboss.weld.core@3.1.4.Final-redhat-00001//org.jboss.weld.bean.proxy.ProxyMethodHandler.invoke(ProxyMethodHandler.java:106)\ndeployment.demandes.war//fr.aprr.asa.esb.demande.api.SalesForceConnector$1841306609$Proxy$_$$_WeldClientProxy.handelRequesst(Unknown Source)\ndeployment.demandes.war//fr.aprr.asa.esb.demande.api.DemandeMessageProcessor.onMessage(DemandeMessageProcessor.java:28)\ndeployment.demandes.war//fr.aprr.asa.api.jms.SuspendableJMSConsumer.onMessage(SuspendableJMSConsumer.java:96)\ndeployment.demandes.war//fr.aprr.asa.api.jms.APRRMessageListener.onMessage(APRRMessageListener.java:153)\ndeployment.activemq-rar.rar//org.apache.activemq.ActiveMQMessageConsumer.dispatch(ActiveMQMessageConsumer.java:1434)\ndeployment.activemq-rar.rar//org.apache.activemq.ActiveMQSessionExecutor.dispatch(ActiveMQSessionExecutor.java:131)\ndeployment.activemq-rar.rar//org.apache.activemq.ActiveMQSessionExecutor.iterate(ActiveMQSessionExecutor.java:202)\ndeployment.activemq-rar.rar//org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:133)\ndeployment.activemq-rar.rar//org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)\njava.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\njava.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\njava.base/java.lang.Thread.run(Thread.java:829)\n"
+  },
+  "body": {
+      "client": {
+          "numero_client": null,
+          "mode_reglement": {
+              "iban": {
+                  "bic": "TESTFRP1XXX",
+                  "titulaire": "CITOLYON PRO TestAuto",
+                  "rum": "00SMIMP01653466960544646",
+                  "iban": "FR7600000000009508873567091",
+                  "domiciliation": "SLIMPAY TEST IBAN PLUS",
+                  "operateur": null,
+                  "date_signature": "2022-05-25",
+                  "lieu_signature": "SMG",
+                  "statut_mandat": "0"
+              },
+              "mode_de_reglement": "1",
+              "delai_de_paiement": null
+          },
+          "identite": {
+              "kbis": {
+                  "siret": "78467169500095",
+                  "rcs": null,
+                  "code_ape": null,
+                  "raison_sociale": "nomSociete"
+              },
+              "nom": "TestAuto",
+              "prenom": "CITOLYON PRO",
+              "civilite": {
+                  "code": "SAS",
+                  "libelle": "SAS"
+              },
+              "date_naissance": null
+          },
+          "coordonnees": {
+              "adresse_pays": {
+                  "code": 250,
+                  "libelle": "FRANCE",
+                  "code_iso_2": null
+              },
+              "numero_telephone": "+33474999999",
+              "numero_portable": "+33699999999",
+              "numero_fax": null,
+              "email": "preprod.edgar@aprr.fr",
+              "adresse_l2_complement_destinataire": "complementAdresse",
+              "adresse_l3_complement_point_geo": "complementAdresse",
+              "adresse_l5_lieu_dit": null,
+              "adresse_l61_code_postal": "69100",
+              "adresse_l62_ville": "VILLEURBANNE",
+              "adresse_l42_rue": "voieAdresse",
+              "adresse_l41_numero_rue": "21"
+          },
+          "typologie": null,
+          "identifiant_client_partenaire": null,
+          "numero_client_facture": null,
+          "numero_client_destinataire": null,
+          "numero_client_societe_mere": null
+      },
+      "commande": {
+          "accepte_mailing_avantage": false,
+          "accepte_mailing_info": false,
+          "commande_date": "2022-05-25T10:22:40Z",
+          "commande_detail": [
+              {
+                  "prix_total_ttc": 15.0,
+                  "campagne_marketing": null,
+                  "item_attribut": [
+                      {
+                          "nom": "code_offre",
+                          "valeur": [
+                              {
+                                  "objet": [
+                                      {
+                                          "nom": "string",
+                                          "valeur": "1"
+                                      }
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "nom": "grille_tarifaire",
+                          "valeur": [
+                              {
+                                  "objet": [
+                                      {
+                                          "nom": "string",
+                                          "valeur": "BASIQUE"
+                                      }
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "nom": "badges",
+                          "valeur": [
+                              {
+                                  "objet": [
+                                      {
+                                          "nom": "immatriculation",
+                                          "valeur": "ACFFTU"
+                                      },
+                                      {
+                                          "nom": "pays_immatriculation",
+                                          "valeur": "250"
+                                      }
+                                  ]
+                              }
+                          ]
+                      }
+                  ],
+                  "item_identifiant": "MP01653466960544646",
+                  "item_package": [
+                      {
+                          "item_identifiant": "DE",
+                          "item_paye_site": false,
+                          "prix_total_ht": 9.17,
+                          "prix_total_ttc": 11.0
+                      },
+                      {
+                          "item_identifiant": "FG01",
+                          "item_paye_site": false,
+                          "prix_total_ht": 2.92,
+                          "prix_total_ttc": 3.5
+                      },
+                      {
+                          "item_identifiant": "FLIVB",
+                          "item_paye_site": false,
+                          "prix_total_ht": 3.33,
+                          "prix_total_ttc": 4.0
+                      }
+                  ],
+                  "item_paye_site": true,
+                  "item_quantite": 1,
+                  "item_type": "abonnement",
+                  "prix_total_ht": 12.5,
+                  "prix_unitaire_ht": 12.5,
+                  "prix_unitaire_ttc": 15.0
+              }
+          ],
+          "commande_numero": "MP01653466960544646",
+          "facture_electronique": true,
+          "livraison": {
+              "adresse_pays": {
+                  "code": 250,
+                  "libelle": "FRANCE",
+                  "code_iso_2": null
+              },
+              "adresse_l2_complement_destinataire": "complementAdresse",
+              "adresse_l3_complement_point_geo": "complementAdresse",
+              "adresse_l5_lieu_dit": null,
+              "adresse_l61_code_postal": "69100",
+              "adresse_l62_ville": "VILLEURBANNE",
+              "adresse_l42_rue": "voieAdresse",
+              "adresse_l41_numero_rue": "21",
+              "adresse_l1_identite": "TestAuto CITOLYON PRO"
+          },
+          "magasin": "Site marchand groupe",
+          "montant_total_ttc": 12.5,
+          "paiement": null
+      },
+      "societe": "03",
+      "parrain_dto": null
+  }
+}
